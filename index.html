@@ -6,151 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Football Website</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        :root {
-            --white: #FFF;
-            --black: #000;
-            --txfont: #6C6C6C;
-            --bluebg: #2D25A0;
-            --buttonpinkbg: #E02C6D;
-            --footballfont: #10437A;
-        }
-
-        body {
-            background-color: var(--white);
-        }
-
-        header {
-            background-color: var(--bluebg);
-            padding: 42px 140px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            margin-right: 36px;
-        }
-
-        nav span.navigation {
-            padding: 10px 0
-        }
-
-        nav span.button,
-            {
-            background-color: var(--buttonpinkbg);
-            color: var(--white);
-            padding: 10px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
-
-        }
-
-        nav .button a {
-            margin-right: 0;
-        }
-
-        nav .button i {
-            margin-right: 8px;
-            color: var(--white);
-        }
-
-        /* featured header section starts */
-
-        .featured-header {
-            display: flex;
-            padding: 50px 0 100px;
-            color: var(--white);
-        }
-
-        .featured-content,
-        .featured-image {
-            width: 50%;
-        }
-
-        .featured-content h1 {
-            font-size: 64px;
-            font-weight: bold;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .featured-content span {
-            background-color: var(--buttonpinkbg);
-            color: var(--white);
-            padding: 10px 0px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
-            width: 168px;
-        }
-
-        .featured-content span a {
-            text-decoration: none;
-            margin-right: 8px;
-            color: var(--white);
-        }
-
-        .featured-image img {
-            width: 100%;
-        }
-
-        /* main content starts */
-        main {
-            width: 1050px;
-            margin: 70px auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* blog part */
-        .blog {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-items: center;
-            column-gap: 30px;
-            row-gap: 27px;
-        }
-
-        .blog article {
-            width: 300px;
-            height: 474px;
-            padding: 15px 15px 33px;
-            /* border: 1px solid red; */
-        }
-
-        .blog article h2 {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .blog article p {
-            font-size: 16px;
-        }
-
-        .blog article img {
-            width: 100%;
-        }
-
-        /* footer style starts */
-        footer {
-            display: flex;
-            justify-content: center;
-            justify-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
@@ -178,7 +34,7 @@
         <section class="featured-header">
             <div class="featured-content">
                 <h1>Conmebol<br> Copa America <br>2021</h1>
-                <span><a href="">Watch Live</a><i class="fas fa-arrow-right"></i></span>
+                <span class="button-enimation"><a href="">Watch Live</a><i class="fas fa-arrow-right"></i></span>
             </div>
             <div class="featured-image">
                 <img src="images/banner.png" alt="">
@@ -211,7 +67,7 @@
                 <p>Widely regarded as one of the greatest players of all time, Portuguese football player, Cristiano
                     Ronaldo, is one of the world's highest-paid athletes. He is a versatile attacker capable of playing
                     on either wing as well as through the center of the pitch. He has the distinction of being the first
-                    European to score 100 international goals.</p>
+                    ...</p>
             </article>
             <article class="blog-article">
                 <img src="images/players/player-4.png" alt="">
@@ -260,14 +116,37 @@
             </article>
 
         </section>
-        <section class="featured">
 
+        <section class="blog-featured">
+            <div class="bf-content">
+                <h1>All Highlights<br>Copa America 2021</h1>
+                <p>Minute-by-minute report: Argentina defeated Brazil at the Maracanã on Ángel Di Maria's goal to win
+                    their 15th Copa América title and first since 1993</p>
+                <span><a href="">Watch Now</a><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="bf-image">
+                <img src="images/match.png" alt="">
+            </div>
         </section>
+
+
 
 
     </main>
     <footer>
-        Copyright &copy;2022, Football
+
+        <div class="logo-footer">
+            <img src="images/Logo.png" alt="">
+        </div>
+        <div class="social">
+            <i class="fab fa-instagram circle-icon"></i>
+            <i class="fab fa-dribbble circle-icon"></i>
+            <i class="fab fa-twitter circle-icon"></i>
+            <i class="fab fa-youtube circle-icon"></i>
+        </div>
+
+        <div class="copyright">Copyright &copy;2022, Football</div>
+
     </footer>
 
 </body>

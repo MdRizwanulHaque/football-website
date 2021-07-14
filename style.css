@@ -1,0 +1,288 @@
+* {
+margin: 0px;
+padding: 0px;
+font-family: 'Poppins', sans-serif;
+}
+
+:root {
+--white: #FFF;
+--black: #000;
+--txfont: #6C6C6C;
+--bluebg: #2D25A0;
+--buttonpinkbg: #E02C6D;
+--footballfont: #10437A;
+}
+
+body {
+background-color: var(--white);
+}
+
+header {
+background-color: var(--bluebg);
+padding: 42px 140px;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+}
+
+nav a {
+color: var(--white);
+text-decoration: none;
+margin-right: 36px;
+}
+
+nav span.navigation {
+padding: 10px 0
+}
+
+nav span.button,
+{
+background-color: var(--buttonpinkbg);
+color: var(--white);
+padding: 10px 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+
+}
+
+nav .button a {
+margin-right: 0;
+}
+
+nav .button i {
+margin-right: 8px;
+color: var(--white);
+}
+
+/* featured header section starts */
+
+.featured-header {
+display: flex;
+padding: 50px 0 100px;
+color: var(--white);
+}
+
+.featured-content,
+.featured-image {
+width: 50%;
+}
+
+.featured-content h1 {
+font-size: 64px;
+font-weight: bold;
+font-family: 'Poppins', sans-serif;
+}
+
+.featured-content span {
+background-color: var(--buttonpinkbg);
+color: var(--white);
+padding: 10px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+width: 168px;
+}
+
+.featured-content span a {
+text-decoration: none;
+margin-right: 8px;
+color: var(--white);
+}
+
+.featured-image img {
+width: 100%;
+}
+
+/* main content starts */
+main {
+width: 1050px;
+margin: 70px auto;
+display: flex;
+flex-direction: column;
+}
+
+/* blog part */
+.blog {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+column-gap: 30px;
+row-gap: 27px;
+margin-bottom: 165px;
+}
+
+.blog article {
+width: 300px;
+height: 474px;
+padding: 15px 15px 33px;
+/* border: 1px solid red; */
+}
+
+.blog article h2 {
+font-size: 28px;
+font-weight: bold;
+}
+
+.blog article p {
+font-size: 16px;
+color: var(--txfont);
+}
+
+.blog article img {
+width: 100%;
+}
+
+
+/* new */
+
+.blog-featured {
+display: flex;
+padding: 50px 0 100px;
+color: var(--white);
+justify-content: center;
+justify-items: center;
+}
+
+.bf-content,
+.bf-image {
+width: 50%;
+}
+
+.bf-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: var(--black);
+
+}
+
+.bf-content h1 {
+font-size: 48px;
+font-weight: bold;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 8px;
+line-height: 60px;
+}
+
+.bf-content p {
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 24px;
+}
+
+
+.bf-content span {
+background-color: var(--buttonpinkbg);
+color: var(--white);
+padding: 10px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+width: 168px;
+}
+
+.bf-content span a {
+text-decoration: none;
+margin-right: 8px;
+color: var(--white);
+}
+
+.bf-image img {
+width: 100%;
+}
+
+/* footer style starts */
+footer {
+display: flex;
+flex-direction: column;
+margin-bottom: 63px;
+}
+
+footer .logo-footer{
+display: flex;
+justify-content: center;
+justify-items: center;
+}
+.logo-footer img{width:400px;}
+
+footer .social{
+display:flex;
+justify-content: center;
+justify-items: center;
+
+}
+
+.social>i{
+font-size: 15px;
+margin:5px;
+color:#969BAB;
+}
+
+.circle-icon {
+background: #dadada;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+text-align: center;
+line-height: 15px;
+vertical-align: middle;
+padding: 7px;
+}    
+
+footer .copyright{
+width: 236px;
+margin: 0px auto;
+text-align: center;
+}
+
+
+
+/***************************** 
+ANIMATION 
+******************************/
+.button-enimation{
+animation-name: mybutton;
+transform: 2s;
+animation-duration: 4s;
+animation-iteration-count: 3;
+}
+.button-enimation a{
+    animation-name: mybutton;
+    transform: 2s;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    color: var(--bluebg);
+}
+
+@keyframes mybutton {
+    from{
+    background-color: var(--buttonpinkbg);
+    }
+    to {
+    width:100%;
+    background-color: yellow;
+    color: var(--bluebg);
+    }
+}
+
+.featured-content h1{
+animation-name: textcolorani;
+transform: 2s;
+animation-duration: 4s;
+animation-iteration-count: 3;
+}
+@keyframes textcolorani {
+    0%{
+    color: var(--white);
+    }
+    100% {
+    color: var(--buttonpinkbg);
+  
+}
+}

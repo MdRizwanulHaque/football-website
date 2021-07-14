@@ -10,6 +10,7 @@
         * {
             margin: 0px;
             padding: 0px;
+            font-family: 'Poppins', sans-serif;
         }
 
         :root {
@@ -45,7 +46,8 @@
             padding: 10px 0
         }
 
-        nav span.button {
+        nav span.button,
+            {
             background-color: var(--buttonpinkbg);
             color: var(--white);
             padding: 10px 24px;
@@ -62,6 +64,79 @@
 
         nav .button i {
             margin-right: 8px;
+            color: var(--white);
+        }
+
+        /* featured header section starts */
+
+        .featured-header {
+            display: flex;
+            padding: 50px 0 100px;
+            color: var(--white);
+        }
+
+        .featured-content,
+        .featured-image {
+            width: 50%;
+        }
+
+        .featured-content h1 {
+            font-size: 64px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .featured-content span {
+            background-color: var(--buttonpinkbg);
+            color: var(--white);
+            padding: 10px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            width: 168px;
+        }
+
+        .featured-content span a {
+            text-decoration: none;
+            margin-right: 8px;
+            color: var(--white);
+        }
+
+        .featured-image img {
+            width: 100%;
+        }
+
+        /* main content starts */
+        main {
+            width: 1050px;
+            margin: 70px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* blog part */
+        .blog {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+
+            /* width: 1350px; */
+            /*padding: 0 180px; */
+            column-gap: 30px;
+            row-gap: 27px;
+        }
+
+        .blog article {
+            width: 300px;
+            height: 474px;
+            padding: 15px 15px 33px;
+            /* border: 1px solid red; */
+
+        }
+
+        .blog article img {
+            width: 100%;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
@@ -89,18 +164,88 @@
         </nav>
         <!--Header Featured-->
         <section class="featured-header">
-            <!-- <div class="featured-content">
-                <h1>Conmebol Copa America 2021</h1>
-                <span>Watch Live <i class="fas fa-arrow-right"></i></span>
+            <div class="featured-content">
+                <h1>Conmebol<br> Copa America <br>2021</h1>
+                <span><a href="">Watch Live</a><i class="fas fa-arrow-right"></i></span>
             </div>
             <div class="featured-image">
                 <img src="images/banner.png" alt="">
-            </div> -->
+            </div>
         </section>
     </header>
     <main>
 
         <section class="blog">
+
+            <article class="blog-article">
+                <img src="images/players/player-1.png" alt="">
+                <h2>Neymar Jr.</h2>
+                <p>Amongst the best football players in the world presently, Neymar is a part of Brazil national team
+                    and French club Paris Saint-Germain. The prolific goal scorer debuted with Santos and played for
+                    Barcelona before joining PSG in a deal that made him the world’s most expensive player. He led
+                    Brazil national team to its first ... </p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-2.png" alt="">
+                <h2>Lionel Messi</h2>
+                <p>Considered one of the best football players in the world and a prolific goal scorer, Lionel Messi has
+                    shattered and created numerous records in his playing career. Regarded by another soccer legend,
+                    Diego Maradona, as his successor, the Argentinian superstar is also one of the world’s highest paid
+                    athletes.</p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-3.png" alt="">
+                <h2>Cristiano Ronaldo</h2>
+                <p>Widely regarded as one of the greatest players of all time, Portuguese football player, Cristiano
+                    Ronaldo, is one of the world's highest-paid athletes. He is a versatile attacker capable of playing
+                    on either wing as well as through the center of the pitch. He has the distinction of being the first
+                    European to score 100 international goals.</p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-4.png" alt="">
+                <h2>Di Maria</h2>
+                <p>Ángel Fabián Di María (born 14 February 1988) is an Argentine professional footballer who plays for
+                    Ligue 1 club Paris Saint-Germain and the Argentina national team. He can play as either a winger or
+                    attacking midfielder.</p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-5.png" alt="">
+                <h2>Kylian Mbappé</h2>
+                <p>Mbappé was the first teenager to score in a World Cup final in decades. The last and only other
+                    teenager to do so was Brazilian legend Pelé, who scored at a World Cup final that his country went
+                    on to win 5-2 over Sweden in 1958</p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-6.png" alt="">
+                <h2>Mohamed Salah</h2>
+                <p>Mohamed Salah is an Egyptian footballer who plays as a forward for the Egyptian national team as well
+                    as the Premier League club 'Liverpool. ' Born and brought up in Gharbia, Egypt, he is a gifted
+                    footballer since his childhood. He started his career with the youth team of the Egyptian club 'El
+                    Mokawloon.</p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-7.png" alt="">
+                <h2>Harry Kane</h2>
+                <p>Harry Edward Kane MBE (born 28 July 1993) is an English professional footballer who plays as a
+                    striker for Premier League club Tottenham Hotspur and captains the England national team. Regarded
+                    as one of the best strikers in the world, Kane is known for his prolific goalscoring record and
+                    ability to link play.</p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-8.png" alt="">
+                <h2>Kevin De Bruyne</h2>
+                <p>Kevin De Bruyne is a Belgian professional football player who currently plays for Manchester City and
+                    the Belgian national team. He was born on 28 June 1991 in Drongen, Ghent, Belgium. At present, he is
+                    considered one of the top players in the world.</p>
+            </article>
+            <article class="blog-article">
+                <img src="images/players/player-9.png" alt="">
+                <h2>Philippe Coutinho</h2>
+                <p>Philippe Coutinho Correia (born 12 June 1992) is a Brazilian professional footballer who plays as an
+                    attacking midfielder or winger for Spanish club Barcelona and the Brazil national team. He is known
+                    for his combination of vision, passing, dribbling and ability to conjure curving long-range strikes.
+                </p>
+            </article>
 
         </section>
         <section class="featured">
